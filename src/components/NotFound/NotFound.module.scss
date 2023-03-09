@@ -1,0 +1,13 @@
+@import "../../assets/styles/variables";
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 200px 15px 20px;
+
+	color: $mainText;
+	font-size: 30px;
+	font-weight: 500;
+}

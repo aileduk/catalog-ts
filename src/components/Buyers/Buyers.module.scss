@@ -1,0 +1,31 @@
+@import "../../assets/styles/variables";
+@import "../../assets/styles/extends";
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin: 0px -16px -16px -16px;
+	padding: 15px;
+
+	border-radius: 0px 0px 8px 8px;
+
+	background-color: $accentBg;
+
+	.buyer {
+		@extend %font-style;
+
+		display: flex;
+		justify-content: center;
+		gap: 5px;
+
+		color: $activeText;
+
+		white-space: nowrap;
+
+		.name {
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+	}
+}

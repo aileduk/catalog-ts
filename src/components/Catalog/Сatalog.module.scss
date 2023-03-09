@@ -1,0 +1,22 @@
+@import "../../assets/styles/variables";
+
+.container {
+	width: 100%;
+	min-height: 100vh;
+
+	background-color: $bodyBg;
+
+	.header {
+		position: fixed;
+		max-width: 430px;
+		width: 100%;
+		padding: 18px 12px;
+		top: 0;
+		left: 50%;
+
+		background-color: $bodyBg;
+
+		transform: translateX(-50%);
+		z-index: 10;
+	}
+}

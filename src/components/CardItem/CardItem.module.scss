@@ -1,0 +1,66 @@
+@import "../../assets/styles/extends.scss";
+@import "../../assets/styles/variables";
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	padding: 16px;
+
+	border: 1px solid $borderColor;
+	border-radius: 8px;
+
+	background-color: $mainBg;
+
+	.name {
+		@extend %accent-font-style;
+		margin-bottom: -18px;
+		color: $accentText;
+	}
+	.category {
+		@extend %font-style;
+		color: $mainText;
+	}
+	.image img {
+		width: 100%;
+		border-radius: 8px;
+		border: 1px solid $borderColor;
+	}
+	.sizes {
+		display: flex;
+		gap: 8px;
+
+		white-space: nowrap;
+		overflow: auto;
+
+		&::-webkit-scrollbar {
+			overflow-y: scroll;
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+		}
+	}
+	.description {
+		@extend %font-style;
+		color: $mainText;
+		text-align: center;
+	}
+	.info {
+		display: flex;
+		justify-content: space-between;
+
+		.infoBlock {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+
+			.infoTitle {
+				@extend %font-style;
+				color: $mainText;
+			}
+			.infoUnits {
+				@extend %accent-font-style;
+				color: $accentText;
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+@import "../../assets/styles/extends";
+@import "../../assets/styles/variables";
+
+.container {
+	display: flex;
+	gap: 12px;
+	margin-right: -12px;
+
+	overflow: auto;
+	white-space: nowrap;
+
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	
+	.button {
+		@extend %font-style;
+
+		padding: 16px;
+
+		border: 1px solid $borderColor;
+		border-radius: 8px;
+
+		background-color: $mainBg;
+
+		color: $mainText;
+
+		&.active {
+			background-color: $accentBg;
+			color: $activeText;
+		}
+	}
+}
